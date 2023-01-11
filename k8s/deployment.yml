@@ -22,3 +22,17 @@ spec:
       imagePullSecrets:
       - name: nexuspwd
 this is extra adding contant
+
+
+
+ selector:
+    matchLabels:
+      app: pets-app
+  template:
+    metadata:
+      labels:
+        app: pets-app
+    spec:
+      containers:
+      - name: pets-app
+        image: 13.233.112.225:8083/myweb:com
